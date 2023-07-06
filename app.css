@@ -1,0 +1,88 @@
+body {
+      font-family: Arial, sans-serif;
+      font-size: 17px;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(white, blue, red);
+    }
+    
+    /* Стили для десктопной версии */
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .skills {
+      text-align: right;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
+      color: white;
+    }
+
+    .Python {width: 70%; background-color: #04AA6D;}
+    .HTML {width: 60%; background-color: #2196F3;}
+    .CSS {width: 55%; background-color: #f44336;}
+    .JS {width: 40%; background-color: #808080;}
+        
+    .profile-image {
+      grid-column: 1 / 2;
+    }
+    
+    .profile-image img {
+      max-width: 80%;
+      height: auto;
+      text-align: center;
+      display: block;
+      margin: auto;
+      border-radius: 300px;
+      border: 2px solid red;
+      box-shadow: 4px 4px 10px gray;
+    }
+    
+    .profile-details {
+      grid-column: 2 / 3;
+    }
+    
+    .section {
+      margin-bottom: 20px;
+    }
+    
+    /* Стили для мобильной версии */
+    @media (max-width: 600px) {
+      .container {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+      }
+      
+      .profile-image {
+        align-self: center;
+        margin-bottom: 20px;
+      }
+      
+      .profile-image img {
+        max-width: 200px;
+        height: auto;
+        text-align: center;
+        display: block;
+        margin: auto;
+        border-radius: 300px;
+        border: 2px solid red;
+        box-shadow: 4px 4px 10px gray;
+
+      }
+      
+      .profile-details {
+        text-align: center;
+      }
+    }
+    b {
+      color: red;
+    }
+    .body-text {
+      font-family: Georgia, serif;
+    }
